@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // Initialize Resend clients
-const resend1 = new Resend(process.env.RESEND_API_KEY_1);
-const resend2 = new Resend(process.env.RESEND_API_KEY_2);
+const resend1 = new Resend("re_WAkYy61z_NAKxUrcHqENk5apXUu3GxRGL");
+const resend2 = new Resend("re_WAkYy61z_NAKxUrcHqENk5apXUu3GxRGL");
 
 // Health check endpoint
 app.get('/health', (req: Request, res: Response) => {
