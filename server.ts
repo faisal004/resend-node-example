@@ -126,8 +126,8 @@ app.post('/api/send-emails-both', async (req: Request, res: Response) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running on http://localhost:${PORT}`);
+app.listen(PORT as number, '0.0.0.0', () => {
+  console.log(`🚀 Server is running on http://0.0.0.0:${PORT}`);
   console.log(`📧 Email endpoints available:`);
   console.log(`   POST /api/send-email-1`);
   console.log(`   POST /api/send-email-2`);
