@@ -98,7 +98,7 @@ app.post('/api/send-emails-both', async (req: Request, res: Response) => {
 
     const [data1, data2] = await Promise.all([
       resend1.emails.send({
-        from: process.env.FROM_EMAIL_1 || 'Kramaankh <noreply@kramaankh.com>',
+        from: process.env.FROM_EMAIL_1 || 'Kramaankh <noreply@uicraft.in>',
         to: Array.isArray(to1) ? to1 : [to1],
         subject: subject1,
         html: html1
